@@ -1,0 +1,31 @@
+<div id="article_wrap">
+    <!form class="edit_article" id="edit_article_55" action="/articles/55" accept-charset="UTF-8" method="post"><!input name="utf8" type="hidden" value="&#x2713;" /><!input type="hidden" name="_method" value="patch" /><!input type="hidden" name="authenticity_token" value="WSpNZ4EIJBX7s3WGOfIjj5nWgjTQ4uYcFrvvvXe6x1NojCIkWDPqIeZ4AtmYJqjgLI2mpx7efuLBwUvpoUuTeQ==" />
+        タイトル<br>
+        <!input type="text" value="記事１" name="article[title]" id="article_title" />
+
+		<%=form_for @page do |f|%>
+		<%=f.text_field :title%>
+        <br><br>
+        
+        記事内容<br>
+        <!textarea name="article[content]" id="article_content">
+
+		<%=f.text_area :body%>
+        <br><br>
+        
+        <!input type="submit" name="commit" value="Update Article" />
+        <%=f.submit%>
+		<%end%>
+        <br><br>
+        
+<!/form></div>
+<footer>
+    <div id="footer_inner">
+        <p>Copyright RailsCamp 2015 All Rights Reserved</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
+

@@ -1,2 +1,51 @@
-<h1>Pages#show</h1>
-<p>Find me in app/views/pages/show.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+    <meta charset="UTF-8">
+    <title>Rails Camp Blog</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+</head>
+<body>
+
+<%= render :partial => 'header'%>
+
+
+<div id="title">
+    <div>
+		<p><%=@page.updated_at.to_s(:updated_at)%> 書いた人:<%=@user%></p>
+        <h1><%=@page.title%></h1>
+    </div>
+</div>
+
+<div id="article_wrap">
+
+    <div id="content">
+		<%=@page.body%>
+    </div>
+
+
+    <div id="sidebar">
+        
+        <h2>★PV数ランキング</h2>
+        <ul>
+            <li><a href="">記事タイトル記事タイトル１記事タイトル記事タイトル<span>（10PV）</span></a></li>
+            <li><a href="">記事タイトル記事タイトル１記事タイトル記事タイトル<span>（8PV）</span></a></li>
+            <li><a href="">記事タイトル記事タイトル１記事タイトル記事タイトル<span>（2PV）</span></a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<footer>
+    <div id="footer_inner">
+        <p>Copyright RailsCamp 2015 All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+

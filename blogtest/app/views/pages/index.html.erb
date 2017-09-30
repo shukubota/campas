@@ -7,27 +7,13 @@
 </head>
 <body>
 
-<header>
-    <p id="logo"><a href="">RailsCamp<span>Blog</span></a></p>
-    <nav>
-        <ul>
-            <li><a href=""><%= link_to 'トップ' ,root_path%> </a></li>
-			
-			<% if user_signed_in?%>
-            <li><a href=""><%= link_to '新規投稿',new_page_path%></a></li>
-            <li><a><%= link_to 'ログアウト',destroy_user_session_path,method: :delete %></a></li>
 
-			<%else%>
-			
-            <li><a><%= link_to 'ユーザー登録',new_user_session_path %></a></li>
-            <li><a><%= link_to 'ログイン',new_user_session_path%></a></li>
-			<%end%>
 
-            <div class="clear"></div>
-        </ul>
-    </nav>
-    <div class="clear"></div>
-</header>
+
+<%= render :partial => "header"%>
+
+
+
 
 <div id="main">
     <!img src="main-img.jpg">
@@ -38,36 +24,21 @@
 <div id="article_wrap">
 
     <div id="article_list">
-        
-        <div>
-            <h2><a href="/single.html">Railsでnil? blank? empty? present?メソッドの違い</a></h2>
-            <p>2015-09-20</p>
-        </div>
-        
-        <div>
-            <h2><a href="/single.html">Github-flowで実践する初心者でも取り組みやすいGitワークフロー</a></h2>
-            <p>2015-09-17</p>
-        </div>
-        
-        <div>
-            <h2><a href="/single.html">メタリックなテキストやボタンを作成するチュートリアルまとめ</a></h2>
-            <p>2015-09-16</p>
-        </div>
-        
-        <div>
-            <h2><a href="/single.html">Photoshopのクリッピングパスを使いこなすために知っておきたいことまとめ</a></h2>
-            <p>2015-09-13</p>
-        </div>
-        
-        <div>
-            <h2><a href="/single.html">自由自在に選択範囲の作成ができるクイックマスク機能を使ってみよう</a></h2>
-            <p>2015-09-11</p>
-        </div>
-        
-        <div>
-            <h2><a href="/single.html">POPなどの印刷物をIllustratorで作る時にしてほしい設定</a></h2>
-            <p>2015-09-10</p>
-        </div>
+
+
+		<% @page.each do |page|%>
+		<div>
+			<h2><%= link_to page.title,page_path(page.id) %></h2>
+			<p><%= page.updated_at.to_s(:updated_at)%></p>
+			<p><a>
+			<%=link_to '編集',edit_page_path(page.id) %>
+			<%=link_to '削除',page_path(page.id),method: :delete %>
+        	</a></p>
+		
+		</div>
+		<%end%>
+
+
 
     </div>
 
