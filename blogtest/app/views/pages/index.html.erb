@@ -25,14 +25,16 @@
 
     <div id="article_list">
 
-
 		<% @page.each do |page|%>
+
 		<div>
 			<h2><%= link_to page.title,page_path(page.id) %></h2>
 			<p><%= page.updated_at.to_s(:updated_at)%></p>
 			<p><a>
+			<%if user_signed_in?%>
 			<%=link_to '編集',edit_page_path(page.id) %>
 			<%=link_to '削除',page_path(page.id),method: :delete %>
+			<%end%>
         	</a></p>
 		
 		</div>
@@ -42,18 +44,7 @@
 
     </div>
 
-    <div id="sidebar">
-        
-        <h2>★PV数ランキング</h2>
-        <ul>
-            <li><a href="">記事タイトル記事タイトル１記事タイトル記事タイトル<span>（10PV）</span></a></li>
-            <li><a href="">記事タイトル記事タイトル１記事タイトル記事タイトル<span>（8PV）</span></a></li>
-            <li><a href="">記事タイトル記事タイトル１記事タイトル記事タイトル<span>（2PV）</span></a></li>
-        </ul>
-    </div>
-    <div class="clear"></div>
-</div>
-
+	<%= render :partial => 'side'%>
 <footer>
     <div id="footer_inner">
         <p>Copyright RailsCamp 2015 All Rights Reserved</p>
