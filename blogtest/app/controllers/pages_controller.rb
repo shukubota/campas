@@ -2,12 +2,21 @@ class PagesController < ApplicationController
   def index
   	@page=Page.all
 
-	ids=REDIS.zrevrange "pages",0,19, withscores: true
+	#if Page.count>0
+
+	
+	@counter=Page.count
+	ids=REDIS.zrevrange "pages",0,2, withscores: true
 	
 	@ids=ids
 	@ids_inv=ids.transpose
-
-	@pages=@ids_inv[0].map{|id|Page.find(id)}
+	@tag=!@ids_inv.empty?
+	
+	if @tag 
+		@pages=@ids_inv[0].map{|id|Page.find(id)}
+	end	
+	
+	
   end
 
   def show
@@ -15,15 +24,18 @@ class PagesController < ApplicationController
 	@user=current_user.email
 	#REDIS.zincrby "pages/daily/#{Date.today.to_s}",1,@page.id
 	REDIS.zincrby "pages",1,@page.id
-	ids=REDIS.zrevrange "pages",0,19, withscores: true
+	ids=REDIS.zrevrange "pages",0,2, withscores: true
 	#@pv=REDIS.get "pages/daily/#{Date.today.to_s}/#{@page.id}"
 	
 	#@scores=scores
 	@ids=ids
 	@ids_inv=ids.transpose
-
+	@tag=!@ids_inv.empty?
+	
 	#@pages=Page.where(id: @ids_inv[0])
-	@pages=@ids_inv[0].map{|id|Page.find(id)}
+	if @tag
+		@pages=@ids_inv[0].map{|id|Page.find(id)}
+	end
   end
 
 
@@ -35,6 +47,7 @@ class PagesController < ApplicationController
 
 	def create
 		@page=Page.new(page_params)
+		@page.attributes={author: current_user.email}
 		@page.save
 		redirect_to root_path
 	end

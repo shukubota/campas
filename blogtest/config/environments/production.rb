@@ -86,6 +86,13 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+
+
+
+
+config.session_store_server=ENV["REDISCLOUD_URL"]
+
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end

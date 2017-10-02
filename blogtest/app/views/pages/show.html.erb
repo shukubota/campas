@@ -12,7 +12,9 @@
 
 <div id="title">
     <div>
-		<p><%=@page.updated_at.to_s(:updated_at)%> 書いた人:<%=@user%></p>
+		<p><%=@page.updated_at.to_s(:updated_at)%> 書いた人:<%=@page.author%></p>
+		
+
         <h1><%=@page.title%></h1>
     </div>
 </div>
@@ -22,17 +24,6 @@
     <div id="content">
 		<%=@page.body%>
     </div>
-
-	<!%@pages.each do |f|%>
-	<!%=f.title%>
-	<!%end%>
-	<!%=@pages.inspect%>
-	
-	
-	<!%=@scores.inspect%>
-	<!%=@ids.inspect%>
-	<!%=@ids_inv.inspect%>
-
 
 
 <%=render :partial => 'side'%>

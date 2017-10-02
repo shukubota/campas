@@ -3,6 +3,9 @@
         <h2>★PV数ランキング</h2>
         <ul>
 			<%count=0%>
+			<!%= @ids_inv.inspect%>
+			<!%= @tag.inspect%>
+			<%if @tag%> 
             <%@pages.each do |f|%>
             <li>
 				<!%=count%>
@@ -10,6 +13,7 @@
 				<%count+=1%>
             </li>
             <%end%>
+			<%end%>
 
         </ul>
     </div>

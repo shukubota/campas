@@ -36,6 +36,8 @@ gem 'devise'
 gem 'rails_admin'
 
 gem 'redis'
+gem 'redis-rails'
+gem 'figaro'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
