@@ -38,6 +38,11 @@ gem 'rails_admin'
 gem 'redis'
 gem 'redis-rails'
 gem 'figaro'
+gem 'pry-rails'
+gem 'pry-doc'
+
+gem 'bullet', :group =>:development
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

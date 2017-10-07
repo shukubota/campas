@@ -2,6 +2,9 @@ class PagesController < ApplicationController
   def index
   	@page=Page.all
 
+	if user_signed_in?
+		@user=current_user.email
+	end
 	#if Page.count>0
 
 	
@@ -10,9 +13,9 @@ class PagesController < ApplicationController
 	
 	@ids=ids
 	@ids_inv=ids.transpose
-	@tag=!@ids_inv.empty?
+	@flag=!@ids_inv.empty?
 	
-	if @tag 
+	if @flag 
 		@pages=@ids_inv[0].map{|id|Page.find(id)}
 	end	
 	
@@ -21,6 +24,7 @@ class PagesController < ApplicationController
 
   def show
 	@page=Page.find(params[:id])
+
 	@user=current_user.email
 	#REDIS.zincrby "pages/daily/#{Date.today.to_s}",1,@page.id
 	REDIS.zincrby "pages",1,@page.id
@@ -30,10 +34,10 @@ class PagesController < ApplicationController
 	#@scores=scores
 	@ids=ids
 	@ids_inv=ids.transpose
-	@tag=!@ids_inv.empty?
+	@flag=!@ids_inv.empty?
 	
 	#@pages=Page.where(id: @ids_inv[0])
-	if @tag
+	if @flag
 		@pages=@ids_inv[0].map{|id|Page.find(id)}
 	end
   end
@@ -42,6 +46,7 @@ class PagesController < ApplicationController
   def new
   	@page=Page.new
   end
+
 
 
 

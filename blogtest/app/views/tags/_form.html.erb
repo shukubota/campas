@@ -1,0 +1,27 @@
+<div id="article_wrap">
+        タイトル<br>
+
+		<%=form_for @tag do |f|%>
+		<%=f.text_field :title%>
+        <br><br>
+        
+        記事内容<br>
+
+		<%=f.text_area :body%>
+        <br><br>
+        
+        <%=f.submit%>
+		<%end%>
+        <br><br>
+        
+</div>
+<footer>
+    <div id="footer_inner">
+        <p>Copyright RailsCamp 2015 All Rights Reserved</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
+

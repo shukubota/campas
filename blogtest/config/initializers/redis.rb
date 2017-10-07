@@ -3,18 +3,18 @@
 
 
 
-$redis=Redis.new(url: ENV["REDIS_URL"])
+REDIS=Redis.new(url: ENV["REDIS_URL"])
 
 
 
 
-#require 'redis'
+#require "redis"
 
 #uri=URI.parse(ENV["REDIS"])
 #REDIS=Redis.new(host: uri.host,port: uri.port)
 
 
-#REDIS=Redis.new(url:"host: redis://h:p17d3d9d1f60e7db1b4d1af87007b11886a6e57dcb13e0ff1508c833ee042244a@ec2-34-233-181-119.compute-1.amazonaws.com:48089")
+#redis=Redis.new(url:"host: redis://h:p17d3d9d1f60e7db1b4d1af87007b11886a6e57dcb13e0ff1508c833ee042244a@ec2-34-233-181-119.compute-1.amazonaws.com:48089/15")
 
 
 

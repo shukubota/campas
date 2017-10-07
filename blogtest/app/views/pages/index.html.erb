@@ -26,6 +26,8 @@
     <div id="article_list">
 
 
+		
+
 		<% @page.each do |page|%>
 
 		<div>
@@ -33,16 +35,30 @@
 			<p><%= page.updated_at.to_s(:updated_at)%></p>
 			<p><a>
 			<%if user_signed_in?%>
+
+			<% if page.author==@user%>
 			<%=link_to '編集',edit_page_path(page.id) %>
 			<%=link_to '削除',page_path(page.id),method: :delete %>
+			<%=link_to 'タグ追加', page_path(page.id)%>
+			<%end%>
 			<%end%>
         	</a></p>
+			<p><a>
+			[タグ]
+			<% page.comments.each do |comment|%>
+				<%=comment.body%>
+			<%end%>
+			</a></p>
+
 		
 		</div>
 		<%end%>
 
 
-
+		
+		<h2>
+		<%=link_to "タグ一覧ページを表示", tagshow_index_path%>
+		</h2>
     </div>
 
 	<%= render :partial => 'side'%>

@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
+  get 'tagshow/index'
+
   devise_for :users
   #get 'pages/index'
 
   #get 'pages/show'
 
-  resources :pages
+  resources :pages do
+  	resources :comments do 
+	end
+  end
+
+
 
 
 root 'pages#index'

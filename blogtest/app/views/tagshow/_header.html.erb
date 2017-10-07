@@ -1,0 +1,28 @@
+<header>
+       <%=link_to root_path do %>
+            <p id="logo"><a href="/">RailsCamp<span>Blog</span></a></p>
+        <%end%>
+
+
+    <nav>
+            <ul>
+            <%=link_to root_path do%>
+              <li><a href="/">トップ</a></li>
+              <%end%>
+    
+
+                <% if user_signed_in?%>
+                <li><%=link_to '新規投稿',new_page_path%></li>
+                <li><%=link_to 'ログアウト',destroy_user_session_path,method: :delete%></li>
+                <%else%>
+                <li><%=link_to 'ユーザー登録',new_user_session_path%></li>
+                <li><%=link_to 'ログイン',new_user_session_path%></li>
+                <%end%> 
+                <div class="clear"></div>
+            </ul>
+    </nav>
+        <div class="clear"></div>
+
+    </header>
+
+
