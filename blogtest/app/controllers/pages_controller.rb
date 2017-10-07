@@ -24,8 +24,9 @@ class PagesController < ApplicationController
 
   def show
 	@page=Page.find(params[:id])
-
-	@user=current_user.email
+	if user_signed_in?
+		@user=current_user.email
+	end
 	#REDIS.zincrby "pages/daily/#{Date.today.to_s}",1,@page.id
 	REDIS.zincrby "pages",1,@page.id
 	ids=REDIS.zrevrange "pages",0,2, withscores: true
