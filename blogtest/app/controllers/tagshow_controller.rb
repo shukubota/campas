@@ -1,7 +1,9 @@
 class TagshowController < ApplicationController
   def index
-	@page=Page.all
-	@comment=Comment.all
+	@page=Page
+	@comment=Comment.all.includes(:page)
+	@commentname=Comment.pluck(:body).uniq
+	
 	if user_signed_in?
 		@user=current_user.email
 	end

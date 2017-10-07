@@ -26,30 +26,39 @@
     <div id="article_list">
 	<h1>タグ一覧ページ</h1>
 
-		<%@comment.each do |comment|%>
-		<!%@comment.all.including(:page).each do |comment|%>
-		<h1>
-		<%=comment.body%>
-		</h1>
+
+
+
+
+
+
+		<%@commentname.each do |commentname|%>
 			
+		<h1>
+		<%=commentname%>
+		</h1>
 		<div>
+		<%@comment.each do |comment|%>
+			<%if comment.body==commentname%>
 			<h2><%= link_to comment.page.title,page_path(comment.page.id) %></h2>
 			<p><%= comment.page.updated_at.to_s(:updated_at)%></p>
-			<p><a>
 			<%if comment.page.author==@user%>
 			<%if user_signed_in?%>
+			<p><a>
 			<%=link_to '編集',edit_page_path(comment.page.id) %>
 			<%=link_to '削除',page_path(comment.page.id),method: :delete %>
 			<%=link_to 'タグ追加', page_path(comment.page.id)%>
+			</a></p>
 			<%end%>
 			<%end%>
-        	</a></p>
 			<p><a>
 			[タグ]
 			<% comment.page.comments.each do |comment2|%>
 				<%=comment2.body%>
 			<%end%>
 			</a></p>
+			<%end%>
+			<%end%>
 
 		
 		</div>
