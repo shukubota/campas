@@ -767,3 +767,19 @@ RETURN 'procedures' as a, procedures as result
 2017-11-06 15:10:51.891+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
 2017-11-06 15:11:30.955+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
 2017-11-06 15:11:30.956+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-06 15:19:53.707+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14714]:  Starting check pointing...
+2017-11-06 15:19:53.707+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14714]:  Starting store flush...
+2017-11-06 15:19:53.736+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14714 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-06 15:19:53.736+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14714 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-06 15:19:53.739+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14714]:  Store flush completed
+2017-11-06 15:19:53.739+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14714]:  Starting appending check point entry into the tx log...
+2017-11-06 15:19:53.739+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14714]:  Appending check point entry into the tx log completed
+2017-11-06 15:19:53.739+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14714]:  Check pointing completed
+2017-11-06 15:19:53.739+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-06 15:19:53.739+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 01:54:23.009+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1419ms.
+2017-11-07 02:32:39.008+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1459ms.
+2017-11-07 03:06:05.007+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1452ms.
+2017-11-07 03:21:13.013+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1464ms.
+2017-11-07 04:41:03.972+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Neo4j::Migrations::SchemaMigration`) RETURN n
+2017-11-07 04:41:03.982+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:`Neo4j::Migrations::SchemaMigration`) RETURN n

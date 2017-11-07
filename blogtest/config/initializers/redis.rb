@@ -1,6 +1,7 @@
 
 
 
+#require "redis"
 
 
 REDIS=Redis.new(url: ENV["REDIS_URL"])
@@ -8,7 +9,8 @@ REDIS=Redis.new(url: ENV["REDIS_URL"])
 
 
 
-#require "redis"
+
+
 
 #uri=URI.parse(ENV["REDIS"])
 #REDIS=Redis.new(host: uri.host,port: uri.port)
