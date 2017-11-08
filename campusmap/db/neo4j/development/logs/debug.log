@@ -2658,3 +2658,39 @@ return n,a
 2017-11-08 11:23:57.487+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [26317]:  Check pointing completed
 2017-11-08 11:23:57.487+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
 2017-11-08 11:23:57.487+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 11:30:12.108+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Faculty`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-08 11:30:12.109+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (result:`Faculty`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-08 11:31:20.407+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-08 11:31:20.408+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-08 11:32:04.105+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Faculty`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-08 11:32:04.107+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (result:`Faculty`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-08 11:32:10.788+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: EXPLAIN match (a:Faculty{name:"理学部"})--(n:University)
+return n,a
+
+2017-11-08 11:32:10.789+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (a:Faculty{name:"理学部"})--(n:University)
+return n,a
+
+2017-11-08 11:32:12.449+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: match (a:Faculty{name:"理学部"})--(n:University)
+return n,a
+2017-11-08 11:32:12.822+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-08 11:32:12.823+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-08 11:32:23.701+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: EXPLAIN match (a:Faculty{name:"理学部"})--(n:University)
+return n,a
+2017-11-08 11:32:23.702+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (a:Faculty{name:"理学部"})--(n:University)
+return n,a
+2017-11-08 11:32:41.303+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`University`) SET n = {props} RETURN n
+2017-11-08 11:32:41.304+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CREATE (n:`University`) SET n = {props} RETURN n
+2017-11-08 11:38:57.805+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [31364]:  Starting check pointing...
+2017-11-08 11:38:57.805+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [31364]:  Starting store flush...
+2017-11-08 11:38:57.855+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 31364 to [/Users/admin/shu/ruby/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 11:38:57.856+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 31364 to [/Users/admin/shu/ruby/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 11:38:57.860+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [31364]:  Store flush completed
+2017-11-08 11:38:57.860+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [31364]:  Starting appending check point entry into the tx log...
+2017-11-08 11:38:57.861+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [31364]:  Appending check point entry into the tx log completed
+2017-11-08 11:38:57.861+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [31364]:  Check pointing completed
+2017-11-08 11:38:57.861+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-08 11:38:57.861+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 11:40:53.127+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Faculty`) OPTIONAL MATCH (n)-[r]-() DELETE n,r
+2017-11-08 11:40:53.128+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:`Faculty`) OPTIONAL MATCH (n)-[r]-() DELETE n,r
+2017-11-08 11:40:55.709+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`University`) OPTIONAL MATCH (n)-[r]-() DELETE n,r
+2017-11-08 11:40:55.710+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:`University`) OPTIONAL MATCH (n)-[r]-() DELETE n,r
