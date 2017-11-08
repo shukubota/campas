@@ -1,16 +1,7 @@
-#p=University.create(name:"tokyo")
 
 require 'json'
 require 'uri'
 require 'net/http'
-
-
-
-
-#uri=URI.parse('https://www.dropbox.com/s/5jirjbyb1hca9rl/school.json')
-#json=Net::HTTP.get(uri)
-
-
 
 
 
@@ -43,7 +34,7 @@ File.open("school.json") do |file|
 
 
 	facultylist.each do |faculty|
-	#	Faculty.create(name: faculty)
+		Faculty.create(name: faculty)
 	end
 
 
@@ -58,12 +49,6 @@ File.open("school.json") do |file|
 			b=University.find_by(name: univnode)
 			b.Faculties << a
 		end
-	end
-
-
-
-	univlist.each do |univ|
-	#	University.create(name: univ)
 	end
 
 
