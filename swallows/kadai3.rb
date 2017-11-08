@@ -153,48 +153,48 @@ data.each do |f|
 
 
 	b=Number.find_by(name: f[0])
-	a.numbers<<b
+	a.number=b
 	
 
 
 	b=Position.find_by(name: f[2])
-	a.positions<<b
+	a.position=b
 
 
 	b=Birthday.find_by(name: f[3])
-	a.birthdays<<b
+	a.birthday=b
 
 	b=Age.find_by(name: f[4])
-	a.ages<<b
+	a.age=b
 
 
 
 
 	b=Length.find_by(name: f[5])
-	a.lengths<<b
+	a.length=b
 
 	b=Height.find_by(name: f[6])
-	a.heights<<b
+	a.height=b
 
 
 	b=Weight.find_by(name: f[7])
-	a.weights<<b
+	a.weight=b
 
 
 	b=Blood.find_by(name: f[8])
-	a.bloods<<b
+	a.blood=b
 
 
 	b=Throwbat.find_by(name: f[9])
-	a.throwbats<<b
+	a.throwbat=b
 
 
 	b=Place.find_by(name: f[10])
-	a.places<<b
+	a.place=b
 
 
 	b=Salary.find_by(name: f[11])
-	a.salaries<<b
+	a.salarie=b
 
 
 
