@@ -14,12 +14,46 @@
 :constraints:
 - CONSTRAINT ON ( `neo4j::migrations::schemamigration`:`Neo4j::Migrations::SchemaMigration`
   ) ASSERT `neo4j::migrations::schemamigration`.migration_id IS UNIQUE
+- CONSTRAINT ON ( age:Age ) ASSERT age.uuid IS UNIQUE
+- CONSTRAINT ON ( agein:AgeIn ) ASSERT agein.uuid IS UNIQUE
+- CONSTRAINT ON ( birthday:Birthday ) ASSERT birthday.uuid IS UNIQUE
+- CONSTRAINT ON ( blood:Blood ) ASSERT blood.uuid IS UNIQUE
+- CONSTRAINT ON ( bloodin:BloodIn ) ASSERT bloodin.uuid IS UNIQUE
+- CONSTRAINT ON ( born:Born ) ASSERT born.uuid IS UNIQUE
+- CONSTRAINT ON ( bornin:BornIn ) ASSERT bornin.uuid IS UNIQUE
 - CONSTRAINT ON ( faculty:Faculty ) ASSERT faculty.uuid IS UNIQUE
-- CONSTRAINT ON ( has:Has ) ASSERT has.uuid IS UNIQUE
+- CONSTRAINT ON ( height:Height ) ASSERT height.uuid IS UNIQUE
+- CONSTRAINT ON ( heightin:HeightIn ) ASSERT heightin.uuid IS UNIQUE
+- CONSTRAINT ON ( length:Length ) ASSERT length.uuid IS UNIQUE
+- CONSTRAINT ON ( lengthin:LengthIn ) ASSERT lengthin.uuid IS UNIQUE
+- CONSTRAINT ON ( name:Name ) ASSERT name.uuid IS UNIQUE
+- CONSTRAINT ON ( number:Number ) ASSERT number.uuid IS UNIQUE
+- CONSTRAINT ON ( numberin:NumberIn ) ASSERT numberin.uuid IS UNIQUE
+- CONSTRAINT ON ( place:Place ) ASSERT place.uuid IS UNIQUE
+- CONSTRAINT ON ( placein:PlaceIn ) ASSERT placein.uuid IS UNIQUE
+- CONSTRAINT ON ( position:Position ) ASSERT position.uuid IS UNIQUE
+- CONSTRAINT ON ( positionin:PositionIn ) ASSERT positionin.uuid IS UNIQUE
+- CONSTRAINT ON ( salary:Salary ) ASSERT salary.uuid IS UNIQUE
+- CONSTRAINT ON ( salaryin:SalaryIn ) ASSERT salaryin.uuid IS UNIQUE
+- CONSTRAINT ON ( type:Type ) ASSERT type.uuid IS UNIQUE
+- CONSTRAINT ON ( typein:TypeIn ) ASSERT typein.uuid IS UNIQUE
 - CONSTRAINT ON ( university:University ) ASSERT university.uuid IS UNIQUE
+- CONSTRAINT ON ( weight:Weight ) ASSERT weight.uuid IS UNIQUE
+- CONSTRAINT ON ( weightin:WeightIn ) ASSERT weightin.uuid IS UNIQUE
 :indexes: []
 :versions:
-- '20171106081122'
-- '20171106093323'
-- '20171106103750'
-- '20171106133801'
+- '20171108071937'
+- '20171108072253'
+- '20171108072915'
+- '20171108075523'
+- '20171108075810'
+- '20171108080006'
+- '20171108080513'
+- '20171108080736'
+- '20171108080750'
+- '20171108090821'
+- '20171108090902'
+- '20171108090942'
+- '20171108091052'
+- '20171108093800'
+- '20171108094201'
