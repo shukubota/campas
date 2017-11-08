@@ -1,0 +1,58 @@
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of ActiveNode to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# Note that this schema.yml definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using neo4j:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# you'll amass, the slower it'll run and the greater likelihood for issues).
+#
+# It's strongly recommended that you check this file into your version control system.
+
+---
+:constraints:
+- CONSTRAINT ON ( `neo4j::migrations::schemamigration`:`Neo4j::Migrations::SchemaMigration`
+  ) ASSERT `neo4j::migrations::schemamigration`.migration_id IS UNIQUE
+- CONSTRAINT ON ( age:Age ) ASSERT age.uuid IS UNIQUE
+- CONSTRAINT ON ( agein:AgeIn ) ASSERT agein.uuid IS UNIQUE
+- CONSTRAINT ON ( birthday:Birthday ) ASSERT birthday.uuid IS UNIQUE
+- CONSTRAINT ON ( blood:Blood ) ASSERT blood.uuid IS UNIQUE
+- CONSTRAINT ON ( bloodin:BloodIn ) ASSERT bloodin.uuid IS UNIQUE
+- CONSTRAINT ON ( born:Born ) ASSERT born.uuid IS UNIQUE
+- CONSTRAINT ON ( bornin:BornIn ) ASSERT bornin.uuid IS UNIQUE
+- CONSTRAINT ON ( faculty:Faculty ) ASSERT faculty.uuid IS UNIQUE
+- CONSTRAINT ON ( has:Has ) ASSERT has.uuid IS UNIQUE
+- CONSTRAINT ON ( height:Height ) ASSERT height.uuid IS UNIQUE
+- CONSTRAINT ON ( heightin:HeightIn ) ASSERT heightin.uuid IS UNIQUE
+- CONSTRAINT ON ( length:Length ) ASSERT length.uuid IS UNIQUE
+- CONSTRAINT ON ( lengthin:LengthIn ) ASSERT lengthin.uuid IS UNIQUE
+- CONSTRAINT ON ( name:Name ) ASSERT name.uuid IS UNIQUE
+- CONSTRAINT ON ( number:Number ) ASSERT number.uuid IS UNIQUE
+- CONSTRAINT ON ( numberin:NumberIn ) ASSERT numberin.uuid IS UNIQUE
+- CONSTRAINT ON ( place:Place ) ASSERT place.uuid IS UNIQUE
+- CONSTRAINT ON ( placein:PlaceIn ) ASSERT placein.uuid IS UNIQUE
+- CONSTRAINT ON ( position:Position ) ASSERT position.uuid IS UNIQUE
+- CONSTRAINT ON ( positionin:PositionIn ) ASSERT positionin.uuid IS UNIQUE
+- CONSTRAINT ON ( salary:Salary ) ASSERT salary.uuid IS UNIQUE
+- CONSTRAINT ON ( salaryin:SalaryIn ) ASSERT salaryin.uuid IS UNIQUE
+- CONSTRAINT ON ( type:Type ) ASSERT type.uuid IS UNIQUE
+- CONSTRAINT ON ( typein:TypeIn ) ASSERT typein.uuid IS UNIQUE
+- CONSTRAINT ON ( university:University ) ASSERT university.uuid IS UNIQUE
+- CONSTRAINT ON ( weight:Weight ) ASSERT weight.uuid IS UNIQUE
+- CONSTRAINT ON ( weightin:WeightIn ) ASSERT weightin.uuid IS UNIQUE
+:indexes: []
+:versions:
+- '20171107095843'
+- '20171107155419'
+- '20171108005115'
+- '20171108011027'
+- '20171108011034'
+- '20171108011042'
+- '20171108011048'
+- '20171108011054'
+- '20171108011111'
+- '20171108011140'
+- '20171108011155'
+- '20171108011327'
+- '20171108011348'

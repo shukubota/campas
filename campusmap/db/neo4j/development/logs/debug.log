@@ -783,3 +783,700 @@ RETURN 'procedures' as a, procedures as result
 2017-11-07 03:21:13.013+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1464ms.
 2017-11-07 04:41:03.972+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Neo4j::Migrations::SchemaMigration`) RETURN n
 2017-11-07 04:41:03.982+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:`Neo4j::Migrations::SchemaMigration`) RETURN n
+2017-11-07 07:15:37.012+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1177ms.
+2017-11-07 07:53:21.010+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1177ms.
+2017-11-07 07:56:41.672+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Neo4j::Migrations::SchemaMigration`) SET n = {props} RETURN n
+2017-11-07 07:56:41.673+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CREATE (n:`Neo4j::Migrations::SchemaMigration`) SET n = {props} RETURN n
+2017-11-07 07:56:41.735+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Name(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 07:56:41.739+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@6e3e3d50[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 07:56:41.739+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@6e3e3d50[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 07:56:41.775+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Name(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 07:56:41.883+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Position(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 07:56:41.885+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5c7f74e8[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 07:56:41.885+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5c7f74e8[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 07:56:41.892+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Position(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 07:56:41.952+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Birthday(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 07:56:41.954+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1b10909c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 07:56:41.955+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1b10909c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 07:56:41.962+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Birthday(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 07:56:43.475+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14731]:  Starting check pointing...
+2017-11-07 07:56:43.476+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14731]:  Starting store flush...
+2017-11-07 07:56:43.496+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14731 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 07:56:43.497+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14731 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 07:56:43.499+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14731]:  Store flush completed
+2017-11-07 07:56:43.499+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14731]:  Starting appending check point entry into the tx log...
+2017-11-07 07:56:43.499+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14731]:  Appending check point entry into the tx log completed
+2017-11-07 07:56:43.499+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14731]:  Check pointing completed
+2017-11-07 07:56:43.499+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 07:56:43.499+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 08:04:43.272+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Age(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.277+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7842e9b4[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.277+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7842e9b4[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.285+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Age(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.336+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Length(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.339+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@692d5f7b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.339+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@692d5f7b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.345+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Length(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.395+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Height(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.397+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5b276351[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.397+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5b276351[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.405+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Height(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.449+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Weight(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.453+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@badcd44[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.453+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@badcd44[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.466+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Weight(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.512+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Blood(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.521+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@f77e554[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.521+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@f77e554[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.529+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Blood(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.575+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Type(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.578+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@75fcf810[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.578+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@75fcf810[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.588+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Type(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.642+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Place(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.644+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7985d79c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.644+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7985d79c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.648+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Place(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.687+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Salary(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.690+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@14842bbc[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.690+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@14842bbc[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.697+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Salary(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.742+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Number(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:04:43.745+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@42a6f01b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.745+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@42a6f01b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 08:04:43.751+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Number(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 08:11:43.755+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14782]:  Starting check pointing...
+2017-11-07 08:11:43.763+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14782]:  Starting store flush...
+2017-11-07 08:11:43.795+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14782 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 08:11:43.796+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14782 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 08:11:43.800+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14782]:  Store flush completed
+2017-11-07 08:11:43.800+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14782]:  Starting appending check point entry into the tx log...
+2017-11-07 08:11:43.800+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14782]:  Appending check point entry into the tx log completed
+2017-11-07 08:11:43.800+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14782]:  Check pointing completed
+2017-11-07 08:11:43.800+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 08:11:43.801+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 08:16:25.024+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 08:16:25.028+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 08:16:40.966+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:Birthday) RETURN n LIMIT 25
+2017-11-07 08:16:40.968+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:Birthday) RETURN n LIMIT 25
+2017-11-07 08:17:28.430+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: EXPLAIN match (n) optional match (n)-[r]-() delete n,r
+2017-11-07 08:17:28.431+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n) optional match (n)-[r]-() delete n,r
+2017-11-07 08:21:12.280+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:Blood) RETURN n LIMIT 25
+2017-11-07 08:21:12.281+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:Blood) RETURN n LIMIT 25
+2017-11-07 08:26:51.992+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14783]:  Starting check pointing...
+2017-11-07 08:26:51.993+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14783]:  Starting store flush...
+2017-11-07 08:26:52.010+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14783 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 08:26:52.011+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14783 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 08:26:52.018+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14783]:  Store flush completed
+2017-11-07 08:26:52.019+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14783]:  Starting appending check point entry into the tx log...
+2017-11-07 08:26:52.019+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14783]:  Appending check point entry into the tx log completed
+2017-11-07 08:26:52.019+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14783]:  Check pointing completed
+2017-11-07 08:26:52.019+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 08:26:52.019+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 08:50:55.757+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Neo4j::Migrations::SchemaMigration`) RETURN n
+2017-11-07 08:50:55.762+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:`Neo4j::Migrations::SchemaMigration`) RETURN n
+2017-11-07 08:50:55.807+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Neo4j::Migrations::SchemaMigration`) SET n = {props} RETURN n
+2017-11-07 08:50:55.808+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CREATE (n:`Neo4j::Migrations::SchemaMigration`) SET n = {props} RETURN n
+2017-11-07 08:50:55.846+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2017-11-07 08:50:55.848+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) OPTIONAL MATCH (n)-[r]-() DELETE n, r
+2017-11-07 08:51:02.434+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14785]:  Starting check pointing...
+2017-11-07 08:51:02.434+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14785]:  Starting store flush...
+2017-11-07 08:51:02.460+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14785 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 08:51:02.462+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14785 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 08:51:02.466+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14785]:  Store flush completed
+2017-11-07 08:51:02.466+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14785]:  Starting appending check point entry into the tx log...
+2017-11-07 08:51:02.466+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14785]:  Appending check point entry into the tx log completed
+2017-11-07 08:51:02.466+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14785]:  Check pointing completed
+2017-11-07 08:51:02.466+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 08:51:02.466+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 09:52:15.014+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1537ms.
+2017-11-07 09:53:35.538+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14787]:  Starting check pointing...
+2017-11-07 09:53:35.546+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14787]:  Starting store flush...
+2017-11-07 09:53:35.567+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14787 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 09:53:35.568+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14787 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 09:53:35.571+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14787]:  Store flush completed
+2017-11-07 09:53:35.571+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14787]:  Starting appending check point entry into the tx log...
+2017-11-07 09:53:35.572+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14787]:  Appending check point entry into the tx log completed
+2017-11-07 09:53:35.572+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14787]:  Check pointing completed
+2017-11-07 09:53:35.572+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 09:53:35.572+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 09:58:59.531+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Born(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 09:58:59.534+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@77932764[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 09:58:59.534+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@77932764[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-07 09:58:59.538+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Born(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-07 13:00:51.006+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1494ms.
+2017-11-07 13:03:11.403+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14795]:  Starting check pointing...
+2017-11-07 13:03:11.433+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 17878ms.
+2017-11-07 13:03:11.461+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14795]:  Starting store flush...
+2017-11-07 13:03:12.557+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14795 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 13:03:12.577+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14795 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 13:03:12.612+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14795]:  Store flush completed
+2017-11-07 13:03:12.612+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14795]:  Starting appending check point entry into the tx log...
+2017-11-07 13:03:12.614+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14795]:  Appending check point entry into the tx log completed
+2017-11-07 13:03:12.614+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14795]:  Check pointing completed
+2017-11-07 13:03:12.615+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 13:03:12.615+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 15:06:32.016+0000 WARN [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1437ms.
+2017-11-07 15:56:56.410+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14796]:  Starting check pointing...
+2017-11-07 15:56:56.428+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14796]:  Starting store flush...
+2017-11-07 15:56:56.447+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14796 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 15:56:56.448+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14796 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 15:56:56.451+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14796]:  Store flush completed
+2017-11-07 15:56:56.451+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14796]:  Starting appending check point entry into the tx log...
+2017-11-07 15:56:56.451+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14796]:  Appending check point entry into the tx log completed
+2017-11-07 15:56:56.451+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14796]:  Check pointing completed
+2017-11-07 15:56:56.451+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 15:56:56.452+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 16:11:56.752+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14800]:  Starting check pointing...
+2017-11-07 16:11:56.759+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14800]:  Starting store flush...
+2017-11-07 16:11:56.778+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14800 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 16:11:56.779+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14800 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 16:11:56.782+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14800]:  Store flush completed
+2017-11-07 16:11:56.782+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14800]:  Starting appending check point entry into the tx log...
+2017-11-07 16:11:56.783+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14800]:  Appending check point entry into the tx log completed
+2017-11-07 16:11:56.783+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14800]:  Check pointing completed
+2017-11-07 16:11:56.783+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 16:11:56.783+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 23:14:20.567+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 23:14:20.578+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 23:14:22.982+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14871]:  Starting check pointing...
+2017-11-07 23:14:22.982+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14871]:  Starting store flush...
+2017-11-07 23:14:23.012+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14871 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 23:14:23.012+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14871 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 23:14:23.019+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14871]:  Store flush completed
+2017-11-07 23:14:23.019+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14871]:  Starting appending check point entry into the tx log...
+2017-11-07 23:14:23.019+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14871]:  Appending check point entry into the tx log completed
+2017-11-07 23:14:23.019+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14871]:  Check pointing completed
+2017-11-07 23:14:23.019+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 23:14:23.019+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 23:20:06.225+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-07 23:20:06.226+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-07 23:20:52.808+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Number`) RETURN n
+2017-11-07 23:20:52.809+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:`Number`) RETURN n
+2017-11-07 23:21:00.636+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 23:21:00.641+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 23:22:29.549+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Number`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-07 23:22:29.549+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (result:`Number`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-07 23:23:28.376+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Number`) OPTIONAL MATCH (n)-[r]-() DELETE n,r
+2017-11-07 23:23:28.377+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:`Number`) OPTIONAL MATCH (n)-[r]-() DELETE n,r
+2017-11-07 23:24:40.685+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 23:24:40.687+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 23:28:19.061+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:Age) RETURN n LIMIT 25
+2017-11-07 23:28:19.062+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:Age) RETURN n LIMIT 25
+2017-11-07 23:28:54.925+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Name`) SET n = {props} RETURN n
+2017-11-07 23:28:54.926+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CREATE (n:`Name`) SET n = {props} RETURN n
+2017-11-07 23:29:23.334+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14948]:  Starting check pointing...
+2017-11-07 23:29:23.334+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14948]:  Starting store flush...
+2017-11-07 23:29:23.373+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14948 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 23:29:23.374+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14948 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 23:29:23.376+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14948]:  Store flush completed
+2017-11-07 23:29:23.376+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14948]:  Starting appending check point entry into the tx log...
+2017-11-07 23:29:23.376+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14948]:  Appending check point entry into the tx log completed
+2017-11-07 23:29:23.376+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14948]:  Check pointing completed
+2017-11-07 23:29:23.376+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 23:29:23.376+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 23:44:23.675+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14952]:  Starting check pointing...
+2017-11-07 23:44:23.682+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14952]:  Starting store flush...
+2017-11-07 23:44:23.699+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 14952 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 23:44:23.700+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 14952 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-07 23:44:23.703+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14952]:  Store flush completed
+2017-11-07 23:44:23.703+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14952]:  Starting appending check point entry into the tx log...
+2017-11-07 23:44:23.703+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14952]:  Appending check point entry into the tx log completed
+2017-11-07 23:44:23.703+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [14952]:  Check pointing completed
+2017-11-07 23:44:23.703+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 23:44:23.704+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-07 23:49:20.483+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Number`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-07 23:49:20.484+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (result:`Number`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-07 23:49:25.177+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (result:`Place`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-07 23:49:25.177+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (result:`Place`) WHERE (result.name = {result_name}) RETURN ID(result) AS proof_of_life LIMIT 1
+2017-11-07 23:49:25.185+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Place`) SET n = {props} RETURN n
+2017-11-07 23:49:25.186+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CREATE (n:`Place`) SET n = {props} RETURN n
+2017-11-07 23:49:30.564+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:Age) RETURN n LIMIT 25
+2017-11-07 23:49:30.565+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:Age) RETURN n LIMIT 25
+2017-11-07 23:49:30.653+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-07 23:49:30.653+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-07 23:49:32.765+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:Birthday) RETURN n LIMIT 25
+2017-11-07 23:49:32.766+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:Birthday) RETURN n LIMIT 25
+2017-11-07 23:49:32.795+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 23:49:32.797+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-07 23:49:37.944+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:Born) RETURN n LIMIT 25
+2017-11-07 23:49:37.945+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:Born) RETURN n LIMIT 25
+2017-11-07 23:49:54.197+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:Name) RETURN n LIMIT 25
+2017-11-07 23:49:54.198+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:Name) RETURN n LIMIT 25
+2017-11-07 23:59:24.011+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15184]:  Starting check pointing...
+2017-11-07 23:59:24.011+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15184]:  Starting store flush...
+2017-11-07 23:59:24.049+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 15184 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 23:59:24.050+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 15184 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-07 23:59:24.053+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15184]:  Store flush completed
+2017-11-07 23:59:24.053+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15184]:  Starting appending check point entry into the tx log...
+2017-11-07 23:59:24.054+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15184]:  Appending check point entry into the tx log completed
+2017-11-07 23:59:24.054+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15184]:  Check pointing completed
+2017-11-07 23:59:24.054+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-07 23:59:24.054+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 00:43:27.857+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CREATE (n:`Name`) SET n = {props} RETURN n
+2017-11-08 00:43:27.859+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CREATE (n:`Name`) SET n = {props} RETURN n
+2017-11-08 00:43:35.042+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15255]:  Starting check pointing...
+2017-11-08 00:43:35.042+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15255]:  Starting store flush...
+2017-11-08 00:43:35.074+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 15255 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 00:43:35.076+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 15255 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 00:43:35.080+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15255]:  Store flush completed
+2017-11-08 00:43:35.080+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15255]:  Starting appending check point entry into the tx log...
+2017-11-08 00:43:35.080+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15255]:  Appending check point entry into the tx log completed
+2017-11-08 00:43:35.080+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15255]:  Check pointing completed
+2017-11-08 00:43:35.081+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-08 00:43:35.081+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 00:46:17.287+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:`Neo4j::Migrations::SchemaMigration`) RETURN n
+2017-11-08 00:46:17.288+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:`Neo4j::Migrations::SchemaMigration`) RETURN n
+2017-11-08 00:46:17.317+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) SET n.`incomplete` = {setter_n_incomplete}
+2017-11-08 00:46:17.318+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n) WHERE (ID(n) = {ID_n}) SET n.`incomplete` = {setter_n_incomplete}
+2017-11-08 00:52:50.325+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:AgeIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 00:52:50.328+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@577bee07[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 00:52:50.328+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@577bee07[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 00:52:50.333+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:AgeIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 00:58:35.342+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15262]:  Starting check pointing...
+2017-11-08 00:58:35.342+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15262]:  Starting store flush...
+2017-11-08 00:58:35.373+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 15262 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-08 00:58:35.374+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 15262 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-08 00:58:35.378+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15262]:  Store flush completed
+2017-11-08 00:58:35.378+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15262]:  Starting appending check point entry into the tx log...
+2017-11-08 00:58:35.378+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15262]:  Appending check point entry into the tx log completed
+2017-11-08 00:58:35.378+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15262]:  Check pointing completed
+2017-11-08 00:58:35.378+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-08 00:58:35.378+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 01:13:35.717+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15265]:  Starting check pointing...
+2017-11-08 01:13:35.735+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15265]:  Starting store flush...
+2017-11-08 01:13:35.754+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 15265 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 01:13:35.755+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 15265 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 01:13:35.756+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15265]:  Store flush completed
+2017-11-08 01:13:35.756+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15265]:  Starting appending check point entry into the tx log...
+2017-11-08 01:13:35.757+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15265]:  Appending check point entry into the tx log completed
+2017-11-08 01:13:35.758+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15265]:  Check pointing completed
+2017-11-08 01:13:35.758+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-08 01:13:35.758+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 01:22:19.646+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:BloodIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.648+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1ff00c7a[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.648+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1ff00c7a[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.654+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:BloodIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.691+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:LengthIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.692+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@6c9f30ad[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.692+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@6c9f30ad[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.696+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:LengthIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.741+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:NumberIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.743+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5029513c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.743+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@5029513c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.748+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:NumberIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.787+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:PositionIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.789+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@50e3f78d[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.789+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@50e3f78d[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.792+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:PositionIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.839+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:TypeIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.841+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@799a3b45[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.841+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@799a3b45[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.845+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:TypeIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.886+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:BornIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.888+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7628946b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.888+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@7628946b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.892+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:BornIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.930+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:PlaceIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.933+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1e32a268[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.933+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@1e32a268[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.937+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:PlaceIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.976+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:WeightIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:19.978+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@47bc34f4[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.978+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@47bc34f4[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:19.987+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:WeightIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:20.042+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:HeightIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:20.045+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@2c3d044f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:20.045+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@2c3d044f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:20.051+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:HeightIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:20.108+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:SalaryIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:22:20.110+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@a8b2065[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:20.110+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@a8b2065[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-11-08 01:22:20.116+0000 INFO [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:SalaryIn(uuid) [provider: {key=lucene, version=1.0}]]
+2017-11-08 01:28:36.100+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15319]:  Starting check pointing...
+2017-11-08 01:28:36.100+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15319]:  Starting store flush...
+2017-11-08 01:28:36.148+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 15319 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-08 01:28:36.149+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 15319 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-08 01:28:36.154+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15319]:  Store flush completed
+2017-11-08 01:28:36.154+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15319]:  Starting appending check point entry into the tx log...
+2017-11-08 01:28:36.155+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15319]:  Appending check point entry into the tx log completed
+2017-11-08 01:28:36.155+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15319]:  Check pointing completed
+2017-11-08 01:28:36.155+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-08 01:28:36.155+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 01:43:36.492+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15320]:  Starting check pointing...
+2017-11-08 01:43:36.492+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15320]:  Starting store flush...
+2017-11-08 01:43:36.537+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 15320 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 01:43:36.538+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 15320 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 01:43:36.540+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15320]:  Store flush completed
+2017-11-08 01:43:36.540+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15320]:  Starting appending check point entry into the tx log...
+2017-11-08 01:43:36.540+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15320]:  Appending check point entry into the tx log completed
+2017-11-08 01:43:36.540+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15320]:  Check pointing completed
+2017-11-08 01:43:36.540+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-08 01:43:36.541+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 02:01:17.145+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15321]:  Starting check pointing...
+2017-11-08 02:01:17.145+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15321]:  Starting store flush...
+2017-11-08 02:01:17.183+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 15321 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-08 02:01:17.184+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 15321 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-11-08 02:01:17.185+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15321]:  Store flush completed
+2017-11-08 02:01:17.185+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15321]:  Starting appending check point entry into the tx log...
+2017-11-08 02:01:17.186+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15321]:  Appending check point entry into the tx log completed
+2017-11-08 02:01:17.186+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15321]:  Check pointing completed
+2017-11-08 02:01:17.186+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-08 02:01:17.186+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 02:02:23.225+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-08 02:02:23.226+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-08 02:05:25.173+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (n:Name) RETURN n LIMIT 25
+2017-11-08 02:05:25.173+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (n:Name) RETURN n LIMIT 25
+2017-11-08 02:07:31.942+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: EXPLAIN match (n:Name)-[r:NUMBER_IN]->(a:Number)
+return n,r,a
+2017-11-08 02:07:31.942+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:Name)-[r:NUMBER_IN]->(a:Number)
+return n,r,a
+2017-11-08 02:16:17.459+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15464]:  Starting check pointing...
+2017-11-08 02:16:17.459+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15464]:  Starting store flush...
+2017-11-08 02:16:17.496+0000 INFO [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 15464 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 02:16:17.498+0000 INFO [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 15464 to [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/admin/shu/ruby/projects/test_for_git/campus_for_git/helloHeroku/campus/campusmap/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-11-08 02:16:17.500+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15464]:  Store flush completed
+2017-11-08 02:16:17.500+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15464]:  Starting appending check point entry into the tx log...
+2017-11-08 02:16:17.500+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15464]:  Appending check point entry into the tx log completed
+2017-11-08 02:16:17.500+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [15464]:  Check pointing completed
+2017-11-08 02:16:17.500+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-11-08 02:16:17.500+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-11-08 02:17:14.293+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: EXPLAIN match (n:Name)-[r:NUMBER_IN]->(a:Number)
+delete n,r,a
+2017-11-08 02:17:14.293+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:Name)-[r:NUMBER_IN]->(a:Number)
+delete n,r,a
+2017-11-08 02:17:34.275+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-08 02:17:34.277+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-08 02:18:03.880+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: 
+CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-08 02:18:03.882+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label)[..1000] AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType)[..1000] AS relationshipTypes
+RETURN 'relationshipTypes' as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey)[..1000] AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+UNION
+CALL dbms.functions() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as functions
+RETURN 'functions' as a, functions AS result
+UNION
+CALL dbms.procedures() YIELD name, signature, description
+WITH collect({name: name, signature: signature, description: description}) as procedures
+RETURN 'procedures' as a, procedures as result
+
+2017-11-08 02:18:20.932+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-08 02:18:20.933+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2017-11-08 02:19:43.836+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: EXPLAIN match (n:Name)--(a:Age)
+return n
+2017-11-08 02:19:43.837+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:Name)--(a:Age)
+return n
+2017-11-08 02:19:45.027+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: EXPLAIN match (n:Name)--(a:Age)
+return n,a
+2017-11-08 02:19:45.028+0000 INFO [o.n.c.i.CommunityCompatibilityFactory] Discarded stale query from the query cache: match (n:Name)--(a:Age)
+return n,a
