@@ -3,3 +3,5 @@
 2017-11-06 08:17:43.215+0000 INFO  Bolt enabled on localhost:7472.
 2017-11-06 08:17:51.756+0000 INFO  Started.
 2017-11-06 08:17:53.049+0000 INFO  Remote interface available at http://localhost:7474/
+2017-11-08 06:14:56.412+0000 ERROR Client triggered an unexpected error [UnknownError]: java.lang.NullPointerException, reference 5c804d52-dc65-4d93-a228-7d9f0cf40b18.
+2017-11-08 06:15:01.473+0000 ERROR Client triggered an unexpected error [UnknownError]: java.lang.NullPointerException, reference d50be509-1315-4a95-8d68-1926300f20b5.
