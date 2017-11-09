@@ -12,7 +12,7 @@ class Player
     has_one :out, :blood,type: :Blood,model_class: :Blood
     has_one :out, :throwbat,type: :Throwbat,model_class: :Throwbat
     has_one :out, :place,type: :Place,model_class: :Place
-    has_one :out, :salarie,type: :Salary,model_class: :Salary
+    has_one :out, :salary,type: :Salary,model_class: :Salary
 
 
 end

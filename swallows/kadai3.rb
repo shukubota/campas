@@ -194,7 +194,7 @@ data.each do |f|
 
 
 	b=Salary.find_by(name: f[11])
-	a.salarie=b
+	a.salary=b
 
 
 
